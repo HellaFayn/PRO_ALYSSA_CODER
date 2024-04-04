@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+h2, h3{
+    margin: 0px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+#summary{
+    margin-left:auto ;
+}
+
+.Header{
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(182, 182, 248);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.content1{
+    width: 75%;
+}
+.content2{
+    width: 25%;
+    display: flex;
+}
+
+table{
+    width: 100%;
+}
+
+.quantity_container{
+    display: flex;
+    justify-content: center;
+}
+
+.Btn_minus, .Btn_plus{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.ammount{
+    text-align: center;
+}
+
+.quantity{
+    width: 50px;
+    margin: 0px 10px;
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#total{
+    text-align: center;
+    margin-left: 10px;
+}

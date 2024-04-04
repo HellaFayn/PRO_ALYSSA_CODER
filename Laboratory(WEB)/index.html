@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="onCreate()">
+    <div class="Header">
+        <h2 id="cart">CART</h2>
+        <h2 id="summary">SUMMARY</h2>
+    </div>
+    <div class="container">
+        <div class="content1">
+            <table>
+                <tr>
+                    <td><h3>Name</h3></td>
+                    <td><h3>Price</h3></td>
+                    <td><h3>Quantity</h3></td>
+                    <td><h3>Subtotal</h3></td>
+                </tr>
+                <tr>
+                    <td>Nike 9.5 Green</td>
+                    <td class="ammount"><span id="price1">500</span></td>
+                    <td>
+                        <div class="quantity_container">
+                            <button class="Btn_minus" onclick="onMinusClick1()">-</button>
+                            <input type="number" class="quantity" id="quantity1" value="1" onkeyup="onType1()">
+                            <button class="Btn_plus" id="btnp1" onclick="onPlusClick1()">+</button>
+                        </div>
+                    </td>
+                    <td class="ammount"><span id="subtotal1">P</span></td>
+                </tr>
+                <tr>
+                    <td>Adidas 9.5 Blue</td>
+                    <td class="ammount"><span id="price2">600</span></td>
+                    <td>
+                        <div class="quantity_container">
+                            <button class="Btn_minus" onclick="onMinusClick2()">-</button>
+                            <input type="number" class="quantity" id="quantity2" value="1" onkeyup="onType2()">
+                            <button class="Btn_plus" id="btnp2" onclick="onPlusClick2()">+</button>
+                        </div>
+                    </td>
+                    <td class="ammount"><span id="subtotal2">P</span></td>
+                </tr>
+                <tr>
+                    <td>Ballpen Black</td>
+                    <td class="ammount"><span id="price3">70</span></td>
+                    <td>
+                        <div class="quantity_container">
+                            <button class="Btn_minus" onclick="onMinusClick3()">-</button>
+                            <input type="number" class="quantity" id="quantity3" value="1" onkeyup="onType3()">
+                            <button class="Btn_plus" id="btnp3" onclick="onPlusClick3()">+</button>
+                        </div>
+                    </td>
+                    <td class="ammount"><span id="subtotal3">P</span> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="content2">
+            <h3>TOTAL: </h3>
+            <h3 id="total"></h3>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/script.js"></script>
